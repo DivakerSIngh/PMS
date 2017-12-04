@@ -1,0 +1,28 @@
+<body>
+    <div class="mainDiv">
+
+        <div class="">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <span style="color: red;font-family: cursive;">{{loginError}}</span>
+                <form class="login-form" name="form" novalidate>
+
+                    <label for="username" style="margin-left: 3px;position: absolute;line-height:3;" class="fa fa-user input-icon"></label>
+
+
+                    <input type="text" name="user" placeholder="Username" class="inputClass" />
+                    <label for="password" style="margin-left: 3px;position: absolute;line-height:3;" class="fa fa-lock"></label>
+                    <input type="password" name="pass" class="inputClass" placeholder="Password" />
+                    <input type="submit" name="login" (click)="login();" class="login loginmodal-submit" value="Login " /><a><i class="glyphicon glyphicon-log-in"></i></a>
+                    <input type="submit " name="login " class="login loginmodal-submit " value=" " data-dismiss="modal " #closeBtn style="display:none; " />
+                </form>
+
+                <div class="login-help ">
+                    <a routerLink="user " (click)="register() ">Register</a> - <a href="# ">Forgot Password</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
